@@ -128,13 +128,15 @@
 </script>
 
 <script>
-  $('.image-popup-fit-width').magnificPopup({
+  $(document).ready(function(){
+    $('.image-popup-fit-width').magnificPopup({
           type: 'image',
           closeOnContentClick: true,
           image: {
             verticalFit: false
           }
         });
+  });
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 

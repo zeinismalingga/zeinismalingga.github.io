@@ -19,6 +19,15 @@
 
 <link href="./main.d8e0d294.css" rel="stylesheet"></head>
 
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="./assets/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="./assets/jquery.magnific-popup.min.js"></script>
+
 <body class="">
 
 <!-- Add your content of header -->
@@ -44,10 +53,10 @@
 
         <div class="card">
           <div class="card-block">
-            <h2>About me</h2>
+            <h2 class="text-center">About me</h2>
             <div class="row">
-              <div class="col-md-4">
-                <p><img src="./assets/images/img-01.jpg" class="img-responsive" alt=""></p>
+              <div class="col-md-2">
+                <p><img src="./assets/images/img-01.jpg" class="img-responsive img-circle" width="100%" alt=""></p>
               </div>
               <div class="col-md-8">
 
@@ -60,16 +69,17 @@
 
         <div class="card">
           <div class="card-block">
-            <h2>Projects</h2>
+            <h2 class="text-center">Projects</h2>
             <div class="row">
               <div class="col-md-4">
-                <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-                <h3 class="h5">Amelia App</h3>
-                <p>June 2017</p>
+                <a class="image-popup-fit-width" href="./assets/images/img-03.png"><img src="./assets/images/img-03.png" class="img-responsive " alt=""></a>
+                
+                <h3 class="h5">Website Dinas Pangan Prov. Kaltim</h3>
+                <p>Offcial website government</p>
               </div>
               <div class="col-md-4">
                 <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-                <h3 class="h5">Portland</h3>
+                <h3 class="h5">SIMPUL</h3>
                 <p>March 2017</p>
               </div>
               <div class="col-md-4">
@@ -83,7 +93,7 @@
         
         <div class="card">
           <div class="card-block">
-            <h2>Social Network</h2>
+            <h2 class="text-center">Social Network</h2>
             <div class="row">
               <div class="col-md-3">
                 <p class="social-buttons"><a href="https://twitter.com/zeinismalingga" title=""><span class="social-round-icon fa-icon"><i class="fa fa-twitter"></i></span>@zeinismalingga</a></p>
@@ -97,7 +107,7 @@
 
         <div class="card">
           <div class="card-block">
-            <h2>Contact</h2>
+            <h2 class="text-center">Contact</h2>
             <form action="" class="reveal-content">
               <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="Email">
@@ -136,6 +146,16 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      scrollRevelation('.card');
   });
+</script>
+
+<script>
+  $('.image-popup-fit-width').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false
+          }
+        });
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
